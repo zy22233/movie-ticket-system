@@ -1,4 +1,4 @@
-#影票自助售票机（buymovie_arm）
+# 影票自助售票机（buymovie_arm）
 
 ## 技术栈
 
@@ -13,22 +13,29 @@ C · LVGL 8.3 · Linux framebuffer 直驱 / evdev · TCP Socket · pthread · CM
 - 解决了重复售票问题：已售座位持久化到 `sold_seats.txt`，再次进入选座页自动置灰不可选
 - 解决了嵌入式 UI 卡顿问题：天气刷新、云端消息接收、心跳保活、LED 流水灯全部放到后台线程，与 LVGL 主循环隔离
 
+## 演示视频
+
+[点击观看完整演示（B 站）](https://www.bilibili.com/video/BV1yyaR6CEps/)
+
 ## 快速启动
+
+bash
+mkdir build && cd build
+cmake ..
+make -j8
 
 ## 截图
 
 | 主界面 | 选座（已售置灰） |
 |:---:|:---:|
-| ![主界面](https://github.com/user-attachments/assets/5c2d326f-4072-47b2-bf7b-c98258488ebe) | ![选座](https://github.com/user-attachments/assets/34aafb0e-e733-4bea-8e10-4bf70aa3cd9d)>
-|
+| ![主界面](https://github.com/user-attachments/assets/5c2d326f-4072-47b2-bf7b-c98258488ebe) | ![选座](https://github.com/user-attachments/assets/34aafb0e-e733-4bea-8e10-4bf70aa3cd9d) |
 
 | 卖品 | 支付成功 |
 |:---:|:---:|
-| ![卖品](TU3) | ![支付](TU4) |
 | ![卖品](https://github.com/user-attachments/assets/0d8e2873-bf46-44b2-bcee-81f5981f18ee) | ![支付](https://github.com/user-attachments/assets/7df8e57b-4839-44d8-a335-a3fde9ffb73a) |
 
 
-| 充值|订单 |
+| 充值 | 订单 |
 |:---:|:---:|
 | ![充值](https://github.com/user-attachments/assets/ff094438-c8e5-4a0e-ae58-d7cd980d132b) | ![订单](https://github.com/user-attachments/assets/16f45783-0de9-4198-a09a-d1e46f693902) |
 
