@@ -24,11 +24,11 @@ C · LVGL 8.3 · Linux framebuffer 直驱 / evdev · TCP Socket · pthread · CM
 
 | 卖品 | 支付成功 |
 |:---:|:---:|
-| ![卖品](TU3) | ![支付](TU4) |
+| ![卖品](https://github.com/user-attachments/assets/0d8e2873-bf46-44b2-bcee-81f5981f18ee) | ![支付](https://github.com/user-attachments/assets/7df8e57b-4839-44d8-a335-a3fde9ffb73a) |
 
-| 订单 |
-|:---:|
-| ![订单](TU5) |
+| 充值|订单 |
+|:---:|:---:|
+| ![充值](https://github.com/user-attachments/assets/ff094438-c8e5-4a0e-ae58-d7cd980d132b) | ![订单](https://github.com/user-attachments/assets/16f45783-0de9-4198-a09a-d1e46f693902) |
 
 <details>
 <summary>更多：配置说明与通信协议</summary>
