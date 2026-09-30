@@ -1,8 +1,10 @@
-#影票自助售票机（buymovie_arm）
+# 影票自助售票机（buymovie_arm）
+
+在线演示：<!-- 有录屏/演示视频就放这里，如 [B站演示视频](https://xxx) -->
 
 ## 技术栈
 
-C · LVGL 8.3 · Linux framebuffer 直驱 / evdev · TCP Socket · pthread · CMake（arm-linux-gcc 交叉编译）· 巴法云 IoT
+C · LVGL 8.3 · Linux framebuffer / evdev · TCP Socket · pthread · CMake（arm-linux-gcc 交叉编译）· 巴法云 IoT
 
 ## 核心功能 / 亮点
 
@@ -15,20 +17,27 @@ C · LVGL 8.3 · Linux framebuffer 直驱 / evdev · TCP Socket · pthread · CM
 
 ## 快速启动
 
+```bash
+git clone https://github.com/你的账号/buymovie_arm.git
+cd buymovie_arm
+
+# 1. 云服务器上编译支付服务器（任意 Linux）
+gcc pay_server.c -o pay_server
+./pay_server                # 默认监听 8888 端口
+
+# 2. 交叉编译客户端并烧到开发板（依赖 arm-linux-gcc 5.4.0 + CMake ≥ 3.28）
+mkdir -p build && cd build
+cmake .. && make -j4
+
+# 3. 开发板上运行
+./buymovie_arm
+```
+
+> 记得把 `UI/ui_event.c` 顶部的 `PAY_SERVER_IP` / `PAY_SERVER_PORT` 改成你的云服务器地址。
+
 ## 截图
 
-| 主界面 | 选座（已售置灰） |
-|:---:|:---:|
-| ![主界面](https://github.com/user-attachments/assets/5c2d326f-4072-47b2-bf7b-c98258488ebe) | ![选座](https://github.com/user-attachments/assets/34aafb0e-e733-4bea-8e10-4bf70aa3cd9d)>
-|
-
-| 卖品 | 支付成功 |
-|:---:|:---:|
-| ![卖品](https://github.com/user-attachments/assets/0d8e2873-bf46-44b2-bcee-81f5981f18ee) | ![支付](https://github.com/user-attachments/assets/7df8e57b-4839-44d8-a335-a3fde9ffb73a) |
-
-| 充值|订单 |
-|:---:|:---:|
-| ![充值](https://github.com/user-attachments/assets/ff094438-c8e5-4a0e-ae58-d7cd980d132b) | ![订单](https://github.com/user-attachments/assets/16f45783-0de9-4198-a09a-d1e46f693902) |
+<!-- 截图占位：建议放 主界面 / 选座 / 卖品 / 支付成功 / 订单 五张，两列排布 -->
 
 <details>
 <summary>更多：配置说明与通信协议</summary>
@@ -57,4 +66,3 @@ TCP 明文协议，每条命令以 `\n` 结尾，服务器逐条应答：
 | 其他 | `ERR` | 未知命令 |
 
 </details>
-
