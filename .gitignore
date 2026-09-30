@@ -1,0 +1,26 @@
+# CMake 构建目录
+build/
+
+# 编译产物
+*.o
+*.a
+*.so
+buymovie_arm
+pay_server
+pay
+
+# 运行时生成的数据（账号、余额等，不上传）
+sold_seats.txt
+account/
+balance.txt
+server_accounts.txt
+
+# ZCode 工具配置
+.zcodeignore
+
+# 编辑器 / 系统文件
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+Desktop.ini

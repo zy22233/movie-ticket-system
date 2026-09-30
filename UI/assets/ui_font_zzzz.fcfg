@@ -1,0 +1,16 @@
+{
+  "codename": "zzzz",
+  "ttf_path": "/assets/simfang.ttf",
+  "bin_path": "/assets\\ui_font_zzzz.bin",
+  "c_path": "/assets\\ui_font_zzzz.c",
+  "cfg_path": "/assets\\ui_font_zzzz.fcfg",
+  "size": 22,
+  "bpp": 1,
+  "letters": 0,
+  "ranges": [
+    "0x20-0x7f"
+  ],
+  "symbols": "一二三四五六七八日已满未请选择劲凉退出你的座位支付宝支付微信时余额充头中心像照片名字值￥间厅排天我购票人数的订单星期晴度元气日期天气秒分多云小雨大风阴美年达张冰红茶雷碧康师傅每的薯条肯德基结算合计去总名电影乃万龙场次小猪要佩牛来门演待热映汪汪队立大功过大年院预告片告片保存并或：账号密码登录注册滚出去奇熊出让我没朵拉历险记捣蛋鬼失败小吃薯爆米花学生成功结束返回下一个上一个身高年龄余人\r\n\n一二三四五六七八九十时分秒，龙:：星期日充值结算帐",
+  "customparams": "--no-compress --no-prefilter",
+  "uploaded": false
+}
