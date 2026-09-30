@@ -18,10 +18,12 @@ C · LVGL 8.3 · Linux framebuffer 直驱 / evdev · TCP Socket · pthread · CM
 [点击观看完整演示（B 站）](https://www.bilibili.com/video/BV1yyaR6CEps/)
 
 ## 快速启动
-
 bash
+
 mkdir build && cd build
+
 cmake ..
+
 make -j8
 
 ## 截图
