@@ -19,7 +19,8 @@ C · LVGL 8.3 · Linux framebuffer 直驱 / evdev · TCP Socket · pthread · CM
 
 | 主界面 | 选座（已售置灰） |
 |:---:|:---:|
-| ![主界面](https://github.com/user-attachments/assets/5c2d326f-4072-47b2-bf7b-c98258488ebe) | ![选座](TU2) |
+| ![主界面](https://github.com/user-attachments/assets/5c2d326f-4072-47b2-bf7b-c98258488ebe) | ![选座](https://github.com/user-attachments/assets/34aafb0e-e733-4bea-8e10-4bf70aa3cd9d)>
+|
 
 | 卖品 | 支付成功 |
 |:---:|:---:|
