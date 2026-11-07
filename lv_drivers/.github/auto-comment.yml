@@ -1,5 +1,5 @@
 # Comment to a new issue.
-pullRequestOpened: |
+pullRequestOpened: | 
   Thank you for raising your pull request.
   
   To ensure that all licensing criteria is met all repositories of the LVGL project apply a process called DCO (Developer's Certificate of Origin). 
