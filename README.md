@@ -1,4 +1,4 @@
-# 影票自助售票机（buymovie_arm）
+# 影票自助售票机（buymovie_arm） 
 
 ## 技术栈
 
