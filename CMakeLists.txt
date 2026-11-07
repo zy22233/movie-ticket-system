@@ -17,4 +17,4 @@ add_subdirectory(UI)
 
 add_executable(${PROJECT_NAME} main.c  simfang.c ./UI/ui.c )
 
-target_link_libraries(${PROJECT_NAME} PRIVATE lvgl lvgl::examples lvgl::demos lvgl::drivers ui pthread)
+target_link_libraries(${PROJECT_NAME} PRIVATE lvgl lvgl::drivers ui pthread)
