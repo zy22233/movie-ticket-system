@@ -1,4 +1,4 @@
-/*******************************************************************************
+/******************************************************************************* 
  * Size: 22 px
  * Bpp: 1
  * Opts: --bpp 1 --size 22 --font Z:/yq C语言/c语言小项目/影票自助/UI/assets/simfang.ttf -o Z:/yq C语言/c语言小项目/影票自助/UI/assets\ui_font_Font1.c --format lvgl -r 0x20-0x7f --symbols 一二三四五六七日 --no-compress --no-prefilter
